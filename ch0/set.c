@@ -98,11 +98,11 @@ void* drop(void* _set, const void* _element) {
     struct Object* element = (struct Object* )find(_set, _element);
 
     if (element) { // The element in the set.
-
+        
         if (--element->count == 0) {
             element->in = NULL;
         }
-
+        
         --set->count;
     }
 
