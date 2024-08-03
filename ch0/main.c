@@ -31,7 +31,7 @@ int main(void) {
     if (contains(s, c)) {
         printf("  s contains c.\n");
     } else {
-        printf("  s doesn,t contain c.\n");
+        printf("  s doesn't contain c.\n");
     }
 
     printf("  s = %p;\n", s);

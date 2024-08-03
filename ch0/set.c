@@ -15,7 +15,7 @@ const void* Set = &_Set; // extern
  * 
  * @return A pointer to the element added.
  * 
- * @note if the element has already in the set, its reference count will increment.
+ * @note If the _element has already in the _set, its reference count will increment.
  */
 void* add(void* _set, const void* _element) {
     // int* set = (int* )_set;
@@ -43,9 +43,10 @@ void* add(void* _set, const void* _element) {
         element->in = set;
     } else {
         assert(element->in == set);
-        ++element->count;
-        ++set->count;
     }
+
+    ++element->count;
+    ++set->count;
 
     return (void* )element;
 }
